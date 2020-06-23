@@ -6,8 +6,4 @@ module.exports = {
   rules: {
     strict: 0,
   },
-  env: {
-    jest: true,
-  },
-  plugins: ['jest'],
 };

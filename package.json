@@ -12,7 +12,7 @@
     "lint": "concurrently \"npm run lint:js\" \"npm run lint:css\" \"npm run lint:html\"",
     "predeploy": "npm run build",
     "deploy": "./deploy.sh",
-    "test": "jest ./src"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "boilerplate",
@@ -39,7 +39,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "npm run lint",
-      "pre-push": "npm test"
+      "pre-push": "npm run lint"
     }
   }
 }
